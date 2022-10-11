@@ -15,8 +15,6 @@
     	<a href="sungjukList.jsp">[성적목록]</a>
     </p>
 <%
-	request.setCharacterEncoding("UTF-8");
-	//사용자가 입력한 정보 가져와서 변수에 담기
 	int sno     =Integer.parseInt(request.getParameter("sno").trim()); //글번호
 	String uname=request.getParameter("uname").trim();
 	int kor     =Integer.parseInt(request.getParameter("kor").trim());
@@ -25,7 +23,6 @@
 	String addr =request.getParameter("addr");
 	int aver=(kor+eng+mat)/3;
 	
-	//dto객체에 담기
 	dto.setUname(uname);
 	dto.setKor(kor);
 	dto.setEng(eng);

@@ -26,7 +26,7 @@
 		out.println("해당 글 없음!!");
 	}else{
 %>		
-		<form name="sungjukfrm" id="sungjukfrm" method="post" action="sungjukUpdateProc.jsp">
+		<form method="post" action="sungjukUpdateProc.jsp">
 		    <input type="hidden" name="sno" value="<%=sno%>"> <!-- 수정하고자 하는 글번호 -->
 			<table class="table">
 			<tr>
